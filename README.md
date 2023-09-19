@@ -1,3 +1,10 @@
+{
+  "version": "1.0.0",
+  "theme_name": "Theme One",
+  "repo_url": "https://github.com/SallaApp/theme-raed",
+  "support_url": "https://salla.dev"
+  ...
+}
 <!-- Swiper -->
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
