@@ -1,91 +1,35 @@
-@i1xfi url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
-
-html,
-body {
-position: relative;
-  height: 100%;
-}
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-.swiper {
-  max-width: 50%;
-  overflow: visible;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide::after {
-  position: absolute;
-  content: "";
-  inset: 0;
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background: linear-gradient(to bottom right, #b8b8b88f, #ffffff5e);
-}
-.swiper-slide-active::after {
-  background: none;
-}
-.swiper-slide > div {
-  text-align: center;
-  display: none;
-  opacity: 0;
-}
-.swiper-slide-active div {
-  display: block;
-  opacity: 1;
-}
-
-.swiper-slide h2 {
-  font-size: 1.2rem;
-  font-family: "Libre Baskerville", serif;
-  position: relative;
-}
-
-.swiper-slide h2::after {
-  position: absolute;
-  content: "";
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  background: linear-gradient(#e66465, #9198e5);
-}
-
-@keyframes line {
-  0% {
-    }
-}
-
-.swiper-slide-active h2::after {
-  animation: line 0.5s linear forwards;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  box-shadow: 0px 3px 17px rgb(0 0 0 / 25%);
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-}
-
-@media (min-width: 768px) {
-  .swiper-slide h2 {
-    font-size: 2rem;
-  }
-}
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80" alt="Grilled steak with vegetables" />
+      <div>
+        <h2>Grilled steak with vegetables</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img 
+      src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=481&q=80" alt="Pizza" />
+      <div>
+        <h2>Pizza</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=410&q=80" alt="Sandwich with boiled egg" />
+      <div>
+        <h2>Sandwich with boiled egg</h2>
+          </div>
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=449&q=80" alt="Toast bread with blueberry" />
+      <div>
+        <h2>Toast bread with blueberry</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1481070555726-e2fe8357725c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" alt="Chicken burger" />
+      <div>
+        <h2>Chicken burger</h2>
+      </div>
+    </div>
+  </div>
+</div>
