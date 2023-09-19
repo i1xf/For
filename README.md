@@ -40,3 +40,42 @@
     </div>
   </div>
 </div>
+{
+  ...
+  "components": [
+    {
+      "name": "custom-slider",
+      "title": "صور متحركة (مخصص)",
+      "icon": "sicon-image-carousel",
+      "path": "home.custom-slider",
+      "fields": [
+        {
+          "id": "images",
+          "type": "collection",
+          "format": "collection",
+          "required": true,
+          "minLength": 1,
+          "maxLength": 10,
+          "fields": [
+            {
+              "id": "image",
+              "type": "string",
+              "format": "image"
+            },
+            {
+              "id": "title",
+              "type": "string",
+              "label": "عنوان رئيسي (إختياري)"
+            },
+            {
+              "id": "sub_title",
+              "type": "string",
+              "format": "textarea",
+              "label": "نص توضيحي (إختياري)"
+            }
+          ]
+        }
+      ]
+    },
+  ...
+}
